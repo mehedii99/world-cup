@@ -1,12 +1,11 @@
 /*----group-1-----*/
 .group-1 {
+    display: flex;
     background-color: rgb(16, 16, 16);
-    background-image: url(world-cup-main/assets/Banner\ Image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1200px;
     padding-top: 40px;
-    margin: 100px;
+    margin: 80px;
     border-radius: 20px;
 }
 
@@ -37,7 +36,12 @@
 .group-2 {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    justify-items: end;
+    justify-content: space-between;
+}
+
+.match-sedule-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
 }
 
 /*......button.........*/
@@ -64,11 +68,57 @@
 }
 
 .down-part {
-    color: rgb(23, 63, 175);
-    flex-direction: column;
     text-align: center;
+    color: rgb(23, 63, 175);
+    background-color: bisque;
 }
 
 .media-link {
-    color: rgb(181, 181, 90);
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: bisque;
+}
+
+/*......media query.....*/
+/*mobile-device......*/
+
+@media screen and(min-with:688px) {
+    .group-1 {
+        width: 100%;
+    }
+
+    .banner-left {
+        flex-direction: column;
+    }
+
+    .banner-right {
+        flex-direction: column;
+    }
+
+    .group-2 {
+        color: red;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*.......tablet.....*/
+@media only screen and (min-width:688px) and(max-width:992px) {
+    .group-1 {
+        width: 100%;
+    }
+
+    .banner-left {
+        flex-direction: column;
+    }
+
+    .banner-right {
+        flex-direction: column;
+    }
+
+    .group-2 {
+        color: yellow;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
