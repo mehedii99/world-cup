@@ -1,0 +1,22 @@
+.group-1 {
+    display: flex;
+    background-color: rgb(16, 16, 16);
+    width: 1230px;
+    height: 645px;
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+.banner-left {
+    color: white;
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-right: 100px;
+}
+
+.banner-left h1 {
+    font-size: 70px;
+
+}
