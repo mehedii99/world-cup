@@ -2,123 +2,161 @@
 .group-1 {
     display: flex;
     background-color: rgb(16, 16, 16);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 40px;
-    margin: 80px;
-    border-radius: 20px;
+    width: 1230px;
+    height: 645px;
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 30px;
+    margin-bottom: 100px;
 }
 
-.group-1 h1 {
+.banner-left {
     color: white;
-    font-size: 40px;
-    margin-left: 30px;
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-right: 100px;
 }
 
-.group-1 p {
-    color: white;
-    font-size: 15px;
-    margin-left: 30px;
+.banner-left h1 {
+    font-size: 70px;
+
 }
 
 /* link-button.......*/
 .link-button {
-    color: rgb(251, 17, 17);
-    padding: 12px 10px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: rgb(191, 221, 216);
-    margin: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 12px 18px;
     border-radius: 5px;
 }
 
-/* group-2.............*/
+.link-button:hover {
+    background-color: rgb(223, 103, 56);
+
+}
+
+.banner-right img {
+    height: 555px;
+    width: 500px;
+    padding-right: 80px;
+    padding-top: 90px;
+
+}
+
+/* ............group-2.............*/
+
 .group-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.match-sedule-1 {
+.boxes {
+    text-decoration: none;
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    justify-content: start;
+    height: 8px;
+    width: 10px;
+    justify-items: stretch;
+    align-content: space-evenly;
+    padding-top: 8px;
+    padding-bottom: 10px;
 }
 
-/*......button.........*/
-.button {
-    color: rgb(18, 144, 255);
-    padding: 8px 6px;
-    font-size: 12px;
-    font-weight: bold;
-    background-color: rgb(197, 197, 197);
+.box-3 .link-button {
+    background-color: blueviolet;
+
+}
+
+.shedules {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.shedule {
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.shedule .shedule-banner img {
+    width: 300px;
+    height: 180px;
+}
+
+.shedule-detail {
+    padding-top: 15px;
+    padding-left: 10px;
+
+}
+
+.link-button-transfer {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 4px 10px;
     border-radius: 5px;
 }
 
-/*.....footer......*/
-.footer {
-    background-color: rgb(19, 46, 97);
+.shedule-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.shedule-info img {
+    height: 24px;
+    width: 24px;
+    padding-right: 10px;
+}
+
+.shedule-info p {
+    height: 24px;
+    width: 24px;
+    padding-right: 20px;
+}
+
+/*......footer.........*/
+
+footer {
+    margin-top: 100px;
+    height: 350px;
+    background-color: rgb(0, 0, 0);
     text-align: center;
 
 }
 
-.up-part {
-    text-align: center;
-    background-color: rgb(88, 107, 219);
-
+.up-part h1 {
+    padding-top: 70px;
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
 }
 
-.down-part {
-    text-align: center;
-    color: rgb(23, 63, 175);
-    background-color: bisque;
+.up-part hr {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 16px;
 }
 
 .media-link {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    background-color: bisque;
+    margin-top: 30px;
+
 }
 
-/*......media query.....*/
-/*mobile-device......*/
-
-@media screen and(min-with:688px) {
-    .group-1 {
-        width: 100%;
-    }
-
-    .banner-left {
-        flex-direction: column;
-    }
-
-    .banner-right {
-        flex-direction: column;
-    }
-
-    .group-2 {
-        color: red;
-        grid-template-columns: repeat(1, 1fr);
-    }
+.media-link .fa-brands {
+    font-size: 25px;
 }
 
-/*.......tablet.....*/
-@media only screen and (min-width:688px) and(max-width:992px) {
-    .group-1 {
-        width: 100%;
-    }
-
-    .banner-left {
-        flex-direction: column;
-    }
-
-    .banner-right {
-        flex-direction: column;
-    }
-
-    .group-2 {
-        color: yellow;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+footer p {
+    color: white;
+    font-size: 18px;
+    margin-top: 80px;
 }
