@@ -1,11 +1,51 @@
-/*...........background-img...............*/
-.background-img {
-    background-color: rgb(12, 11, 11);
+/*----group-1-----*/
+.group-1 {
+    background-color: rgb(16, 16, 16);
+    background-image: url(world-cup-main/assets/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    padding-top: 70px;
+    margin: 50px;
+    border-radius: 20px;
 }
 
+.group-1 h1,
+p {
+    color: white;
+}
+
+/* link-button.......*/
 .link-button {
-    width: 5px;
-    height: 3px;
-    color: red;
-    font-size: 20px;
+    color: rgb(251, 17, 17);
+    padding: 12px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(191, 221, 216);
+    margin: 20px;
+}
+
+/* group-2.............*/
+.group-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-items: end;
+}
+
+/*.....footer......*/
+.footer {
+    background-color: black;
+    text-align: center;
+}
+
+.up-part {
+    text-align: center;
+}
+
+.down-part {
+    flex-direction: column;
+}
+
+.media-link {
+    ;
 }
